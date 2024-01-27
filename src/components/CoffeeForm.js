@@ -72,7 +72,7 @@ const CoffeeForm = ({ addCoffee }) => {
           onChange={e => setImage(e.target.value)}
         />
       </label>
-      <button type="submit">Add Coffee Type</button>
+      <button type="submit">Add Favorite Coffee Drink</button>
     </form>
   );
 };
