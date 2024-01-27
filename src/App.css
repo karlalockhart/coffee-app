@@ -1,3 +1,379 @@
+/* app.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1c1005;
+  color: #cfcccc;
+}
+
+/* search bar */
+.search-bar-container {
+  width: 100%;
+  text-align: center;
+  /*margin-top: 20px;*/
+}
+
+.search-bar {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  /*display: inline-block;
+  /*margin: 0 auto; /* Center horizontally */
+}
+
+.search-bar input {
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.search-bar button {
+  padding: 8px;
+  background-color: #995f25;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-bar button:hover {
+  background-color: #fbecc3;
+}
+
+.coffee-types-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px; /* Add margin to separate from the search bar */
+}
+
+.coffee-type {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #cfcaca;
+  color: #444444;
+  width: 300px;
+  margin: 10px;
+}
+
+.coffee-type img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.coffee-type-info {
+  padding: 15px;
+}
+
+.coffee-type h3 {
+  margin-top: 0;
+}
+
+.coffee-type p {
+  margin-bottom: 0;
+}
+
+/*
+.star-button {
+  background-color: transparent;
+  color: yellow;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+*/
+
+.star-button {
+  background-color: transparent;
+  color: rgb(239, 248, 4);
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Adjusted the position to the right side */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star-button:hover {
+  color: white;
+}
+
+/* Adjust the position of the star button for smaller screens */
+@media screen and (max-width: 600px) {
+  .star-button {
+    top: auto;
+    bottom: 10px;
+    right: 10px; /* Adjusted the position to the right side */
+  }
+}
+
+.coffee-type button {
+  background-color: #995f25;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+.coffee-type button:hover {
+  background-color: #fbecc3;
+}
+
+/* Navigation Bar Styles */
+
+.navbar {
+  background-color: #030303;
+  overflow: hidden;
+  color: white;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #030303;
+  display: flex;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 600px) {
+  .menu li {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+    padding: 14px 16px;
+    float: right;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu:checked + .menu {
+    display: flex;
+  }
+}
+
+
+/*
+.cafe-header {
+  background-color: #3e2723;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.cafe-logo {
+  width: 150px;
+  height: auto;
+}
+
+.cafe-content {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* Remove or adjust the flex-wrap property *//*
+  flex-wrap: nowrap; /* Set to 'nowrap' to prevent wrapping *//*
+}
+*/
+
+/*
+/*
+/*
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+}
+
+
+.cafe-header {
+  background-color: #3e2723;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.cafe-logo {
+  width: 150px;
+  height: auto;
+}
+
+
+.cafe-content {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.coffee-type {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  width: 300px; /* Adjust the card width as needed *//*
+}
+
+.coffee-type img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.coffee-type-info {
+  padding: 15px;
+}
+
+.coffee-type h3 {
+  margin-top: 0;
+}
+
+.coffee-type p {
+  margin-bottom: 0;
+}
+
+.coffee-type button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.coffee-type button:hover {
+  background-color: #45a049;
+}
+
+/* Existing styles *//*
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Media query for responsive design *//*
+@media screen and (max-width: 600px) {
+  .menu li {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+    padding: 14px 16px;
+    float: right;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+
+  .menu:checked + .menu {
+    display: flex;
+  }
+}
+
+/* Add more styles as needed */
+
+
+
+
+
+
+
+
+
+/*
 .App {
   text-align: center;
 }
@@ -36,3 +412,4 @@
     transform: rotate(360deg);
   }
 }
+*/

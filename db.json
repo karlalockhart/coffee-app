@@ -1,28 +1,60 @@
 {
   "coffeeTypes": [
     {
-      "id": 1,
-      "name": "Americano",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
+      "name": "espresso",
+      "image": "https://img.freepik.com/premium-photo/tasty-espresso-served-cup-with-coffee-beans-around-spoon-view-from-dark-background_1220-5755.jpg",
+      "description": "a concentrated form of coffee, served in shots",
+      "ingredients": "finely ground coffee, hot water",
+      "likes": 26,
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Expresso",
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
+      "name": "iced coffee",
+      "image": "https://img.freepik.com/premium-photo/glass-iced-coffee-with-black-background_107062-3730.jpg",
+      "description": "coffee description",
+      "ingredients": "Ice, Drip Coffee",
+      "likes": 20,
+      "id": 2
     },
     {
-      "title": "latte",
+      "name": "latte",
+      "image": "https://thumbs.dreamstime.com/b/cup-latte-black-background-cup-latte-black-background-photo-made-dark-key-153841710.jpg",
+      "description": "coffee description",
+      "ingredients": "Expresso, Steamed Milk, Thin Layer of Milk Foam",
+      "likes": 19,
       "id": 3
     },
     {
-      "title": "latte",
-      "id": 4
+      "name": "pour over",
+      "image": "https://t3.ftcdn.net/jpg/03/28/14/78/360_F_328147880_8L3ku1gBMK1nlzb4A6uUHKC6T9ZT4MX3.jpg",
+      "description": "To make a pour-over coffee, the recommended ratio for coffee to water is 1:15, meaning for every 1 gram of coffee add 15 grams of water.",
+      "ingredients": "Filtered Water, Coffee Grounds",
+      "likes": 28,
+      "id": 6
     },
     {
-      "title": "latte",
-      "id": 5
+      "name": "mocha",
+      "image": "https://www.shutterstock.com/image-photo/hot-mocha-on-dark-background-260nw-2303380019.jpg",
+      "description": "chocolate & expresso",
+      "ingredients": "Hot Chocolate or Cocoa, Drip Coffee",
+      "likes": 12,
+      "id": 7
+    },
+    {
+      "name": "americano",
+      "image": "https://assets.beanbox.com/blog_images/AB7ud4YSE6nmOX0iGlgA.jpeg",
+      "description": "hot water and expresso",
+      "ingredients": "Hot Water, Drip Coffee",
+      "likes": 30,
+      "id": 8
+    },
+    {
+      "name": "cappuccino",
+      "description": "an espresso-based coffee drink that is traditionally prepared with steamed milk foam",
+      "image": "https://www.nespresso.com/ncp/res/resized/w1920/uploads/recipes/cappuccino-ucc.jpg",
+      "ingredients": "milk foam, steamed milk, espresso",
+      "id": 9,
+      "likes": null
     }
   ]
 }
