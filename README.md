@@ -12,25 +12,25 @@ https://karlalockhart.github.io/coffee-app
 
 ///
 DESCRIPTION:
-This single page application (SPA) is about providing easier access in finding and curating black artist artwork. It's a site that gathers a collection of black artist artwork from other art sites including the MET (Metropolitan Museum) and The Art Institute of Chicago, thus utilizing their api via db.json. This SPA will include HTML, CSS, & JavaScript.
+This single page application (SPA) is about adding your favorite coffee drinks. It's a site that gathers a collection of coffee drinks including a description, details of ingredients, like counts, and favorite star. The collection is added to a mock api via db.json. This SPA will uses ReactJS (JSX), with some HTML & CSS.
 
 ///
 HOW TO RUN THE APP
->Runs as a Single Page Application (SPA). Single HTML, CSS, JavaScript files.
->Communicates via either an external public API or db.json using json-server --watch db.json
->All interactions between the client and the API are handled asynchronously and uses JSON as the communication format. No API key is required as it is an open API.
+>Runs as a Single Page Application (SPA). Single ReactJS, HTML, CSS files.
+>Communicates via db.json using json-server --watch db.json
+>All interactions between the client and the API are handled asynchronously and uses ReactJS as the framework. No API key is required as it is an open API.
 >No redirects. No page reloads.
 >
 
-1. Upon opening web site/application > begin typing into the search field (i.e. Name of Artwork - "After La Negresse, 1872"; Artist Name - "Kehinde Wiley"; or Category of Artwork - "Sculpture, Drawings or Painting")
+1. Upon opening web site/application > begin typing into the search field (i.e. Name of Coffee Drink - "Latte; By Ingredients - "Espresso";
 
-2. A list of his artwork will filter out from other artist artwork
+2. A list of coffee drinks will filter out from entire collection of coffee drinks
 
-3. You can then click on the artwork card for more artwork details/information
+3. You can then click on the coffee drink card for more coffee details like ingreedients
 
-4. You can switch between light mode/dark mode
+4. To add more coffee drinks, click on the "Add Coffee" page. Fill out the input boxes including coffee name, coffee description, coffee url, and coffee ingredients. Then click the "Add Coffee Drink" button to submit information.
 
-5. To receive more information and sign up on the email list, click on "sign up!" button and input your name and email and click submit.
+5. You can also choose your favorites to be added to the favorites page by clicking on the favorites star.
 
 Page Organization:
 >top: Header > Title of Project > The Black Artist Project or B.A.P.
@@ -38,10 +38,7 @@ Page Organization:
 >container: content
 
 Open API to utilize:
-db.json - http://localhost:3000/data
-
-The MET - https://collectionapi.metmuseum.org/public/collection/v1/objects/[objectID]
-AIC - https://api.artic.edu/api/v1/artworks
+db.json - http://localhost:3001/
 
 
 ///
