@@ -1,5 +1,4 @@
 # Coffee App
-- testing
 
 ///
 NAME OF PROJECT: 

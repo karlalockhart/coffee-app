@@ -119,6 +119,7 @@ const Home = ({ addCoffee, coffeeTypes, updateFavorites }) => {
 
   const handleLike = async (id) => {
     try {
+      
       const response = await fetch(`http://localhost:3000/coffeeTypes/${id}`, {
         method: 'PATCH',
         headers: {
