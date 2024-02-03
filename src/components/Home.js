@@ -208,6 +208,8 @@ const Home = ({ addCoffee, coffeeTypes, updateFavorites }) => {
       {localCoffeeTypes.map(coffee => (
         <div key={coffee.id} className="coffee-type">
           {/* ... (your existing card JSX) */}
+
+          
           <img src={coffee.image} alt={coffee.name} />
           <div className="coffee-type-info">
             <h3>{coffee.name}</h3>
