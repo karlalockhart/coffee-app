@@ -1,6 +1,6 @@
 // App.js
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import AddCoffee from './components/AddCoffee';
 import Favorites from './components/Favorites';
@@ -52,17 +52,15 @@ const App = () => {
         </div>
       </div>
 
-      <Routes>
-        <Route
-          path="/"
-          element={<Home coffeeTypes={coffeeTypes} addCoffee={addCoffee} updateFavorites={updateFavorites} />}
+      
+        <Routes>
+          <Route path="/" element={<Home coffeeTypes={coffeeTypes} addCoffee={addCoffee} updateFavorites={updateFavorites} />}
         />
-        <Route path="/add-coffee/*" element={<AddCoffee addCoffee={addCoffee} />} />
-        <Route
-          path="/favorites"
-          element={<Favorites favorites={favorites} coffeeTypes={coffeeTypes} />}
+          <Route path="/add-coffee/*" element={<AddCoffee addCoffee={addCoffee} />} />
+          <Route path="/favorites" element={<Favorites favorites={favorites} coffeeTypes={coffeeTypes} />}
         />
-      </Routes>
+        </Routes>
+    
     </Router>
   );
 };
