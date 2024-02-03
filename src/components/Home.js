@@ -190,9 +190,11 @@ const Home = ({ addCoffee, coffeeTypes, updateFavorites }) => {
 
   return (
     <div className="coffee-types-container">
+      
       {/* Search Bar */}
       {/*<div className="search-bar-container"></div>*/}
         <div className="search-bar">
+          
         <input
           type="text"
           placeholder="Search by ingredients"
@@ -209,7 +211,7 @@ const Home = ({ addCoffee, coffeeTypes, updateFavorites }) => {
         <div key={coffee.id} className="coffee-type">
           {/* ... (your existing card JSX) */}
 
-          
+
           <img src={coffee.image} alt={coffee.name} />
           <div className="coffee-type-info">
             <h3>{coffee.name}</h3>
