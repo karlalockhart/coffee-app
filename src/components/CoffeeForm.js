@@ -49,7 +49,7 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
       </label>
       <label>
         Coffee Description:
-        <input
+        <textarea
           type="text"
           placeholder="Enter coffee description"
           value={description}
@@ -59,8 +59,8 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
       </label>
       <label>
         Coffee Ingredients:
-        <input
-          placeholder="Enter ingredients"
+        <textarea
+          placeholder="Enter coffee ingredients"
           value={ingredients}
           onChange={e => setIngredients(e.target.value)} //e.target.value will change the "ingredients" to whatever value
         />
@@ -70,7 +70,7 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
         Coffee Image URL:
         <input
           type="text"
-          placeholder="Enter image URL"
+          placeholder="Enter coffee image URL"
           value={image}
           onChange={e => setImage(e.target.value)} //e.target.value will change the "image" to whatever value
         />
