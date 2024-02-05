@@ -45,6 +45,7 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
           value={name}
           onChange={e => setName(e.target.value)} //e.target.value will change the "name" to whatever value
         />
+        <br/>
       </label>
       <label>
         Coffee Description:
@@ -54,24 +55,28 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
           value={description}
           onChange={e => setDescription(e.target.value)} //e.target.value will change the "description" to whatever value
         />
+        <br/>
       </label>
       <label>
-        Ingredients:
+        Coffee Ingredients:
         <input
           placeholder="Enter ingredients"
           value={ingredients}
           onChange={e => setIngredients(e.target.value)} //e.target.value will change the "ingredients" to whatever value
         />
+        <br/>
       </label>
       <label>
-        Image URL:
+        Coffee Image URL:
         <input
           type="text"
           placeholder="Enter image URL"
           value={image}
           onChange={e => setImage(e.target.value)} //e.target.value will change the "image" to whatever value
         />
+        <br/>
       </label>
+      <br/>
       <button type="submit">Add Favorite Coffee Drink</button>
     </form>
   );
