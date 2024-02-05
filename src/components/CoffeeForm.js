@@ -37,6 +37,8 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
 
   return (
     <form onSubmit={handleSubmit}>
+      <hr/>
+      <br/>
       <label>
         Coffee Name:
         <input
@@ -76,6 +78,7 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
         />
         <br/>
       </label>
+      <br/>
       <br/>
       <button type="submit">Add Favorite Coffee Drink</button>
     </form>
