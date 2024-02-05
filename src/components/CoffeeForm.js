@@ -1,14 +1,14 @@
 // CoffeeForm.js
 import React, { useState } from 'react';
 
-const CoffeeForm = ({ addCoffee }) => {
+const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description, image, and ingredients.*/
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [image, setImage] = useState('');
   const [ingredients, setIngredients] = useState('');
 
   const handleSubmit = async e => {
-    e.preventDefault();
+    e.preventDefault(); //what is that it prevents? posting - suppressing the default action of a form from posting
 
     try {
       const response = await fetch('http://localhost:3000/coffeeTypes', {
@@ -43,7 +43,7 @@ const CoffeeForm = ({ addCoffee }) => {
           type="text"
           placeholder="Enter coffee name"
           value={name}
-          onChange={e => setName(e.target.value)}
+          onChange={e => setName(e.target.value)} //e.target.value will change the "name" to whatever value
         />
       </label>
       <label>
@@ -52,7 +52,7 @@ const CoffeeForm = ({ addCoffee }) => {
           type="text"
           placeholder="Enter coffee description"
           value={description}
-          onChange={e => setDescription(e.target.value)}
+          onChange={e => setDescription(e.target.value)} //e.target.value will change the "description" to whatever value
         />
       </label>
       <label>
@@ -60,7 +60,7 @@ const CoffeeForm = ({ addCoffee }) => {
         <input
           placeholder="Enter ingredients"
           value={ingredients}
-          onChange={e => setIngredients(e.target.value)}
+          onChange={e => setIngredients(e.target.value)} //e.target.value will change the "ingredients" to whatever value
         />
       </label>
       <label>
@@ -69,7 +69,7 @@ const CoffeeForm = ({ addCoffee }) => {
           type="text"
           placeholder="Enter image URL"
           value={image}
-          onChange={e => setImage(e.target.value)}
+          onChange={e => setImage(e.target.value)} //e.target.value will change the "image" to whatever value
         />
       </label>
       <button type="submit">Add Favorite Coffee Drink</button>
