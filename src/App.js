@@ -51,21 +51,28 @@ const App = () => {
           </ul>
         </div>
       </div>
-
-      
         <Routes>
-          <Route path="/" element={<Home coffeeTypes={coffeeTypes} addCoffee={addCoffee} updateFavorites={updateFavorites} />}
-        />
+          <Route path="/" element={<Home coffeeTypes={coffeeTypes} addCoffee={addCoffee} updateFavorites={updateFavorites} />} />
           <Route path="/add-coffee/*" element={<AddCoffee addCoffee={addCoffee} />} />
-          <Route path="/favorites" element={<Favorites favorites={favorites} coffeeTypes={coffeeTypes} />}
-        />
+          <Route path="/favorites" element={<Favorites favorites={favorites} coffeeTypes={coffeeTypes} />} />
         </Routes>
-    
     </Router>
   );
 };
 
 export default App;
+
+/*
+<Router>
+    <div className="App">
+      <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/add-coffee/*" component={AddCoffee} />
+          <Route exact path="/favorites" component={Favorites} />
+      </Switch>
+    </div>
+</Router>
+*/
 
 /*
 // App.js
