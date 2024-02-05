@@ -12,7 +12,7 @@ const App = () => {
   const [favorites, setFavorites] = useState([]); // New state for favorites
 
   useEffect(() => {
-    fetch('http://localhost:3000/coffeeTypes')
+    fetch('http://localhost:3000/coffeeTypes') /* fetch is great because it is asynchronous. Returns a promise object w/ 3 status - pending, error, resolved */
       .then(res => res.json())
       .then(data => setCoffeeTypes(data))
       .catch(error => console.error('Error fetching coffee types:', error));
