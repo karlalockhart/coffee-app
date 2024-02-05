@@ -69,6 +69,7 @@ export default App;
           <Route exact path="/" component={Home} />
           <Route exact path="/add-coffee/*" component={AddCoffee} />
           <Route exact path="/favorites" component={Favorites} />
+          <Route path="/coffeeTypes/:id" component={coffeeType} />
       </Switch>
     </div>
 </Router>
