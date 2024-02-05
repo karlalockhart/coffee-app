@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import AddCoffee from './components/AddCoffee';
 import Favorites from './components/Favorites';
-import NavBar from './NavBar';
+//import NavBar from './NavBar';
 import './App.css';
 
 const App = () => {
@@ -38,7 +38,6 @@ const App = () => {
         <label htmlFor="menu-toggle" className="menu-icon">&#9776;</label>
         <div className="menu">
           <h2>Carmen's Coffee Corner</h2>
-          
           <ul>
             <li>
               <Link to="/">Home</Link>
