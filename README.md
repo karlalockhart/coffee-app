@@ -5,6 +5,10 @@ NAME OF PROJECT:
 Carmen's Coffee Corner
 
 ///
+Github Repo
+https://github.com/karlalockhart/coffee-app
+
+///
 URL
 https://karlalockhart.github.io/coffee-app
 

@@ -1,3 +1,4 @@
+//Favorites.js
 import React from 'react';
 
 const Favorites = ({ favorites, coffeeTypes }) => {
