@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import AddCoffee from './components/AddCoffee';
 import Favorites from './components/Favorites';
+import Footer from './components/Footer';
+
 //import NavBar from './NavBar';
 import './App.css';
 
@@ -56,6 +58,8 @@ const App = () => {
           <Route path="/add-coffee/*" element={<AddCoffee addCoffee={addCoffee} />} />
           <Route path="/favorites" element={<Favorites favorites={favorites} coffeeTypes={coffeeTypes} />} />
         </Routes>
+
+        <Footer />
     </Router>
   );
 };
