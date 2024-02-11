@@ -11,7 +11,7 @@ https://karlalockhart.github.io/coffee-app
 
 ///
 DESCRIPTION:
-This single page application (SPA) is about adding your favorite coffee drinks. It's a site that gathers a collection of coffee drinks including a description, details of ingredients, like counts, and favorite star. The collection is added to a mock api via db.json. This SPA will uses ReactJS (JSX), with some HTML & CSS.
+This single page application (SPA) is about adding your favorite coffee drinks. It's a site for coffee lovers like Carmen, that gathers a collection of coffee drinks including a description, details of ingredients, like counts, and favorite coffee drinks. The collection is added to a mock api via db.json. This SPA will uses ReactJS (JSX), with some HTML & CSS.
 
 ///
 HOW TO RUN THE APP
@@ -21,7 +21,7 @@ HOW TO RUN THE APP
 >No redirects. No page reloads.
 >
 
-1. Upon opening web site/application > begin typing into the search field (i.e. Name of Coffee Drink - "Latte; By Ingredients - "Espresso";
+1. Upon opening web site/application > begin typing into the search field (i.e. Name of Coffee Drink - "Latte; By Ingredients - "Espresso");
 
 2. A list of coffee drinks will filter out from entire collection of coffee drinks
 
@@ -67,6 +67,7 @@ Each coffee card inclueds the following attributes:
 4. Ingredients:
 5. Likes
 
+
 -As a user, I want to be able to "Search" specifically for specific coffee drinks (i.e. americano).
 -As a user, I want to be able to "Add" my own coffee drinks using specific attributes such as name, image (url), description, and ingredients.
 -As a user, I want to be able to star my "favorite" coffee drinks and save on the favorites page.
@@ -74,9 +75,11 @@ Each coffee card inclueds the following attributes:
 
 ///
 VISUALS:
-Here's the link to Youtube video:
+Here's the link to Youtube video: 
 https://youtu.be/
 
+
+coffee images credit to: freepik.com
 ///
 INSTALLATION:
 
