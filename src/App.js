@@ -19,7 +19,7 @@ const App = () => {
       .then(data => setCoffeeTypes(data))
       //console.log(data)
       .catch(error => console.error('Error fetching coffee types:', error));
-  }, []);
+  }, []); //mount this
 
   const addCoffee = newCoffee => {
     setCoffeeTypes(prevCoffeeTypes => [...prevCoffeeTypes, newCoffee]);

@@ -32,9 +32,10 @@ HOW TO RUN THE APP
 5. You can also choose your favorites to be added to the favorites page by clicking on the favorites star.
 
 Page Organization:
->top: Header > Title of Project > The Black Artist Project or B.A.P.
->top: navigation area > search bar, dark mode and contact form
->container: content
+>top: Header > Title of Project: Carmen's Coffee Corner
+>top: navigation area > home (coffee cards), add coffee (coffee form), favorites
+>container: coffee card content & details
+>bottom: footer > copyright content
 
 Open API to utilize:
 db.json - http://localhost:3001/
@@ -42,29 +43,39 @@ db.json - http://localhost:3001/
 
 ///
 LIST OF FEATURES:
-The core MVP/site features will include the following (.addEventListener):
+The core MVP/site features will include the following:
 
-1. DOMContentLoaded - to make sure everything loads correctly
-2. Search Input Field - to type in (keyup & filter) the name of black artist or title of artwork or category of artwork (i.e. paintings, scultpures, drawings)
-3. Dark Mode - to (click) between light and dark modes
-4. 'like' - to (click) on the 'like' button and keeping count
-4. Contact Form - to (submit) name and email to be added to the email list
+single page app (using one index.html file using create-react-app)
 
-Each piece of work with include the following attributes:
-1. Title:
-2. Artist:
-3. Medium:
-4. Price:
+5 components
+1. Home.js
+2. AddCoffee.js
+3. CoffeeForm.js
+4. Favorites.js
+5. Footer.js
 
-As a user, I want to be able to "Search" specifically for a particular black art and/or black artists in order quickly curate.
-As a user, I want to be able to "classify" and view only the artwork that pertains to a specific medium.
-As a user, I want to be able to "filter" a specific price range of black art and black artist to view.
+4 client-side routes using React Router
+1. NavBar.js
+2. Home.js
+3. AddCoffee.js
+4. Favorites.js
+
+Each coffee card inclueds the following attributes:
+1. Name:
+2. Image:
+3. Description:
+4. Ingredients:
+5. Likes
+
+-As a user, I want to be able to "Search" specifically for specific coffee drinks (i.e. americano).
+-As a user, I want to be able to "Add" my own coffee drinks using specific attributes such as name, image (url), description, and ingredients.
+-As a user, I want to be able to star my "favorite" coffee drinks and save on the favorites page.
 
 
 ///
 VISUALS:
 Here's the link to Youtube video:
-https://youtu.be/vhcG2Pg62dU
+https://youtu.be/
 
 ///
 INSTALLATION:
