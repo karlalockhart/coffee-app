@@ -1,0 +1,91 @@
+/* NavBar.css */
+
+.navbar {
+    background-color: #030303;
+    overflow: hidden;
+    color: white;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    color: white;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #030303;
+    display: flex;
+  }
+  
+  .menu li {
+    float: left;
+  }
+  
+  .menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .menu li a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Media query for responsive design */
+  @media screen and (max-width: 600px) {
+    .menu li {
+      display: none;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .menu-icon {
+      display: block;
+      padding: 14px 16px;
+      float: right;
+    }
+  
+    .menu {
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .menu:checked + .menu {
+      display: flex;
+    }
+  }
+  
+
+
+
+/*
+.nav-link{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 60px;
+    padding: 5px;
+    margin: 0 6px 6px;
+    background: blue;
+    text-decoration: none;
+    text-align: center;
+    font-size: min(10vw, 15px) ;
+    color: white;
+}
+
+.active {
+    color: red;
+}
+*/
