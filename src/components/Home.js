@@ -162,7 +162,7 @@ const Home = ({ addCoffee, coffeeTypes, updateFavorites }) => {
   };
 
 
-
+  
 
   const handleSearchInputChange = (e) => {
     setSearchInput(e.target.value);

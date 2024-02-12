@@ -1,10 +1,13 @@
 // App.js
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
+import NavBar from './components/NavBar';
 import Home from './components/Home';
 import AddCoffee from './components/AddCoffee';
 import Favorites from './components/Favorites';
 import Footer from './components/Footer';
+
 
 //import NavBar from './NavBar';
 import './App.css';
@@ -36,6 +39,22 @@ const App = () => {
 
   return (
     <Router>
+      <NavBar /> {/* Use NavBar component here */}
+      <Routes>
+        <Route path="/" element={<Home coffeeTypes={coffeeTypes} addCoffee={addCoffee} updateFavorites={updateFavorites} />} />
+        <Route path="/add-coffee/*" element={<AddCoffee addCoffee={addCoffee} />} />
+        <Route path="/favorites" element={<Favorites favorites={favorites} coffeeTypes={coffeeTypes} />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+};
+
+export default App;
+
+  /*
+  return (
+    <Router>
       <div className="navbar">
         <label htmlFor="menu-toggle" className="menu-icon">&#9776;</label>
         <div className="menu">
@@ -65,6 +84,7 @@ const App = () => {
 };
 
 export default App;
+*/
 
 /*
 <Router>
