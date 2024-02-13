@@ -67,6 +67,13 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
           onChange={e => setIngredients(e.target.value)} //e.target.value will change the "ingredients" to whatever value
         />
         <br/>
+        {ingredients && (
+          <ul>
+            {ingredients.split('\n').map((ingredient, index) => (
+              <li key={index}>{ingredient}</li>
+            ))}
+          </ul>
+        )}
       </label>
       <label>
         Coffee Image URL:

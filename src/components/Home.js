@@ -119,7 +119,6 @@ const Home = ({ addCoffee, coffeeTypes, updateFavorites }) => {
 
   const handleLike = async (id) => {
     try {
-      
       const response = await fetch(`http://localhost:3000/coffeeTypes/${id}`, {
         method: 'PATCH',
         headers: {
@@ -162,7 +161,7 @@ const Home = ({ addCoffee, coffeeTypes, updateFavorites }) => {
   };
 
 
-  
+
 
   const handleSearchInputChange = (e) => {
     setSearchInput(e.target.value);
@@ -172,6 +171,23 @@ const Home = ({ addCoffee, coffeeTypes, updateFavorites }) => {
     setSortByLikes(!sortByLikes);
   };
 
+  useEffect(() => {
+    // Filter and sort the coffee types based on search input and likes
+    let filteredCoffeeTypes = coffeeTypes.filter(coffee =>
+      coffee.ingredients.some(ingredient =>
+        ingredient.toLowerCase().includes(searchInput.toLowerCase())
+      )
+    );
+  
+    if (sortByLikes) {
+      filteredCoffeeTypes = filteredCoffeeTypes.sort((a, b) => b.likes - a.likes);
+    }
+  
+    setLocalCoffeeTypes(filteredCoffeeTypes);
+  }, [coffeeTypes, searchInput, sortByLikes]);
+
+
+  /*
   useEffect(() => {
     // Filter and sort the coffee types based on search input and likes
     let filteredCoffeeTypes = coffeeTypes.filter((coffee) =>
@@ -185,7 +201,7 @@ const Home = ({ addCoffee, coffeeTypes, updateFavorites }) => {
     setLocalCoffeeTypes(filteredCoffeeTypes);
   }, [coffeeTypes, searchInput, sortByLikes]);
 
-
+*/
 
 
   return (
@@ -226,7 +242,12 @@ const Home = ({ addCoffee, coffeeTypes, updateFavorites }) => {
             {/* Details content */}
             {coffee.showDetails && (
               <div className="details-container">
-                <p>Ingredients: {coffee.ingredients}</p>
+                <p>Ingredients:</p> 
+                <ul>
+                {coffee.ingredients.map(ingredient => (
+                  <li key={ingredient}>{ingredient}</li>
+                  ))}
+                </ul>
                 {/* Add other details here as needed */}
               </div>
             )}

@@ -4,15 +4,21 @@
       "name": "espresso",
       "image": "https://img.freepik.com/premium-photo/tasty-espresso-served-cup-with-coffee-beans-around-spoon-view-from-dark-background_1220-5755.jpg",
       "description": "also, known as a short black, it's a concentrated form of coffee, served in shots, ",
-      "ingredients": "finely ground coffee, hot water",
-      "likes": 30,
+      "ingredients": [
+        "Finely Ground Coffee",
+        "Hot Water"
+      ],
+      "likes": 31,
       "id": 1
     },
     {
       "name": "iced coffee",
       "image": "https://img.freepik.com/premium-photo/glass-iced-coffee-with-black-background_107062-3730.jpg",
       "description": "a coffee beverage served cold. It may be prepared either by brewing coffee normally and then serving it over ice or in cold milk or by brewing the coffee cold",
-      "ingredients": "Ice, Drip Coffee",
+      "ingredients": [
+        "Ice",
+        "Drip Coffee"
+      ],
       "likes": 20,
       "id": 2
     },
@@ -20,7 +26,11 @@
       "name": "latte",
       "image": "https://thumbs.dreamstime.com/b/cup-latte-black-background-cup-latte-black-background-photo-made-dark-key-153841710.jpg",
       "description": "a milk coffee that is a made up of one or two shots of espresso, steamed milk and a final, thin layer of frothed milk on top",
-      "ingredients": "Expresso, Steamed Milk, Thin Layer of Milk Foam",
+      "ingredients": [
+        "Expresso",
+        "Steamed Milk",
+        "Thin Layer of Milk Foam"
+      ],
       "likes": 19,
       "id": 3
     },
@@ -28,7 +38,10 @@
       "name": "pour over",
       "image": "https://t3.ftcdn.net/jpg/03/28/14/78/360_F_328147880_8L3ku1gBMK1nlzb4A6uUHKC6T9ZT4MX3.jpg",
       "description": "To make a pour-over coffee, the recommended ratio for coffee to water is 1:15, meaning for every 1 gram of coffee add 15 grams of water.",
-      "ingredients": "Filtered Water, Coffee Grounds",
+      "ingredients": [
+        "Filtered Water",
+        "Coffee Grounds"
+      ],
       "likes": 31,
       "id": 6
     },
@@ -36,7 +49,10 @@
       "name": "mocha",
       "image": "https://img.freepik.com/premium-photo/mocha-coffee-with-chocolate-coconut-milk-glass-cup-sugar-gluten-lactose-free_171081-2670.jpg",
       "description": "a caffeinated beverage that combines espresso, steamed milk, and chocolate, specifically hot chocolate",
-      "ingredients": "Hot Chocolate or Cocoa, Drip Coffee",
+      "ingredients": [
+        "Hot Chocolate or Cocoa",
+        "Drip Coffee"
+      ],
       "likes": 12,
       "id": 7
     },
@@ -44,7 +60,10 @@
       "name": "americano",
       "image": "https://assets.beanbox.com/blog_images/AB7ud4YSE6nmOX0iGlgA.jpeg",
       "description": "Freshly pulled shots of espresso combined with hot water",
-      "ingredients": "Hot Water, Drip Coffee",
+      "ingredients": [
+        "Hot Water",
+        "Drip Coffee"
+      ],
       "likes": 34,
       "id": 8
     },
@@ -52,7 +71,11 @@
       "name": "cappuccino",
       "image": "https://www.nespresso.com/ncp/res/resized/w1920/uploads/recipes/cappuccino-ucc.jpg",
       "description": "an espresso-based coffee drink that is traditionally prepared with steamed milk foam",
-      "ingredients": "milk foam, steamed milk, espresso",
+      "ingredients": [
+        "Milk Foam",
+        "Steamed Milk",
+        "Espresso"
+      ],
       "likes": 15,
       "id": 9
     }
