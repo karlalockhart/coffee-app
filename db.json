@@ -64,7 +64,7 @@
         "Hot Water",
         "Drip Coffee"
       ],
-      "likes": 44,
+      "likes": 46,
       "id": 8
     },
     {
@@ -76,8 +76,19 @@
         "Steamed Milk",
         "Espresso"
       ],
-      "likes": 15,
+      "likes": 17,
       "id": 9
+    },
+    {
+      "name": "cortado",
+      "description": "a Spanish beverage consisting of espresso mixed with a milk",
+      "image": "https://cdn.shopify.com/s/files/1/0593/1076/8293/files/AdobeStock_406096101_EDITED_480x480.jpg?v=1644972131",
+      "ingredients": [
+        "espresso",
+        "steamed milk"
+      ],
+      "likes": 1,
+      "id": 10
     }
   ]
 }
