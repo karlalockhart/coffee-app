@@ -174,10 +174,15 @@ const Home = ({ addCoffee, coffeeTypes, updateFavorites }) => {
   useEffect(() => {
     // Filter and sort the coffee types based on search input and likes
     let filteredCoffeeTypes = coffeeTypes.filter(coffee =>
+      Array.isArray(coffee.ingredients) ? coffee.ingredients.some(ingredient =>
+        ingredient.toLowerCase().includes(searchInput.toLowerCase())
+      ) : coffee.ingredients.toLowerCase().includes(searchInput.toLowerCase())
+    );
+    /*let filteredCoffeeTypes = coffeeTypes.filter(coffee =>
       coffee.ingredients.some(ingredient =>
         ingredient.toLowerCase().includes(searchInput.toLowerCase())
       )
-    );
+    ); */
   
     if (sortByLikes) {
       filteredCoffeeTypes = filteredCoffeeTypes.sort((a, b) => b.likes - a.likes);
@@ -244,10 +249,17 @@ const Home = ({ addCoffee, coffeeTypes, updateFavorites }) => {
               <div className="details-container">
                 <p>Ingredients:</p> 
                 <ul>
+                  {Array.isArray(coffee.ingredients) ? coffee.ingredients.map(ingredient => (
+                    <li key={ingredient}>{ingredient}</li>
+                  )) : <li>{coffee.ingredients}</li>}
+                </ul>
+
+                {/*<ul>
                 {coffee.ingredients.map(ingredient => (
                   <li key={ingredient}>{ingredient}</li>
-                  ))}
-                </ul>
+                ))}
+                </ul>*/}
+                  
                 {/* Add other details here as needed */}
               </div>
             )}

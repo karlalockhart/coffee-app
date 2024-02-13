@@ -8,7 +8,7 @@
         "Finely Ground Coffee",
         "Hot Water"
       ],
-      "likes": 31,
+      "likes": 33,
       "id": 1
     },
     {
@@ -53,7 +53,7 @@
         "Hot Chocolate or Cocoa",
         "Drip Coffee"
       ],
-      "likes": 12,
+      "likes": 13,
       "id": 7
     },
     {
@@ -64,7 +64,7 @@
         "Hot Water",
         "Drip Coffee"
       ],
-      "likes": 36,
+      "likes": 37,
       "id": 8
     },
     {
@@ -80,4 +80,4 @@
       "id": 9
     }
   ]
-}
+}    

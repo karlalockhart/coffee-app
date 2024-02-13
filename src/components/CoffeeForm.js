@@ -16,7 +16,13 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, description, image, ingredients }),
+        body: JSON.stringify({
+          name,
+          description,
+          image,
+          ingredients: ingredients.split('\n').map(ingredient => ingredient.trim()), // Split and trim ingredients
+          likes: 0, // Initial likes set to 0 for a new coffee drink
+        }),
       });
 
       if (!response.ok) {
@@ -62,7 +68,7 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
       <label>
         Coffee Ingredients:
         <textarea
-          placeholder="Enter coffee ingredients"
+          placeholder="Enter coffee ingredients (one per line)"
           value={ingredients}
           onChange={e => setIngredients(e.target.value)} //e.target.value will change the "ingredients" to whatever value
         />
