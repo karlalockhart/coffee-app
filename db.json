@@ -42,7 +42,7 @@
         "Filtered Water",
         "Coffee Grounds"
       ],
-      "likes": 35,
+      "likes": 36,
       "id": 6
     },
     {
@@ -64,7 +64,7 @@
         "Hot Water",
         "Drip Coffee"
       ],
-      "likes": 37,
+      "likes": 38,
       "id": 8
     },
     {
@@ -80,4 +80,4 @@
       "id": 9
     }
   ]
-}    
+}
