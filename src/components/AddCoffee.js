@@ -1,6 +1,6 @@
 // AddCoffee.js
 import React from 'react';
-import CoffeeForm from './CoffeeForm'; // Import CoffeeForm
+import CoffeeForm from './CoffeeForm';
 
 const AddCoffee = ({ addCoffee }) => {
   return (
@@ -15,20 +15,3 @@ const AddCoffee = ({ addCoffee }) => {
 
 export default AddCoffee;
 
-
-
-/*
-// About.js
-import React from 'react';
-
-const About = () => {
-  return (
-    <div>
-      <h2>About Page</h2>
-      {/* About page content *//*}
-    </div>
-  );
-};
-
-export default About;
-*/
