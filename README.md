@@ -15,7 +15,7 @@ https://karlalockhart.github.io/coffee-app
 
 ///
 DESCRIPTION:
-This single page application (SPA) is about adding your favorite coffee drinks. It's a site for coffee lovers like Carmen, that gathers a collection of coffee drinks including a description, details of ingredients, like counts, and favorite coffee drinks. The collection is added to a mock api via db.json. This SPA will uses ReactJS (JSX), with some HTML & CSS.
+This single page application (SPA) is about adding your favorite coffee drinks. It's a site for coffee lovers like Carmen, that gathers a collection of coffee drinks including a description, details of ingredients, like counts, and favorite coffee drinks. The collection is added to a mock api via db.json. This SPA uses ReactJS (JSX), with some HTML & CSS.
 
 ///
 HOW TO RUN THE APP
