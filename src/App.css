@@ -76,6 +76,22 @@ body {
   margin-bottom: 0;
 }
 
+/* image size consistency */
+.coffee-image {
+  width: 200px; /* Set the fixed width for the image */
+  height: auto; /* Automatically adjust the height */
+}
+
+.coffee-placeholder {
+  width: 200px; /* Set the same width as the image */
+  height: 200px; /* Set a fixed height */
+  background-color: lightgray; /* Placeholder background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /*
 .star-button {
   background-color: transparent;

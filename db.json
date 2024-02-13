@@ -8,7 +8,7 @@
         "Finely Ground Coffee",
         "Hot Water"
       ],
-      "likes": 33,
+      "likes": 34,
       "id": 1
     },
     {
@@ -31,7 +31,7 @@
         "Steamed Milk",
         "Thin Layer of Milk Foam"
       ],
-      "likes": 19,
+      "likes": 21,
       "id": 3
     },
     {
@@ -42,7 +42,7 @@
         "Filtered Water",
         "Coffee Grounds"
       ],
-      "likes": 36,
+      "likes": 37,
       "id": 6
     },
     {
@@ -64,12 +64,12 @@
         "Hot Water",
         "Drip Coffee"
       ],
-      "likes": 38,
+      "likes": 44,
       "id": 8
     },
     {
       "name": "cappuccino",
-      "image": "https://www.nespresso.com/ncp/res/resized/w1920/uploads/recipes/cappuccino-ucc.jpg",
+      "image": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "description": "an espresso-based coffee drink that is traditionally prepared with steamed milk foam",
       "ingredients": [
         "Milk Foam",

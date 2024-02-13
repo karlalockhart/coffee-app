@@ -19,7 +19,7 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
         body: JSON.stringify({
           name,
           description,
-          image,
+          image: image || getDefaultImageURL(name),
           ingredients: ingredients.split('\n').map(ingredient => ingredient.trim()), // Split and trim ingredients
           likes: 0, // Initial likes set to 0 for a new coffee drink
         }),
@@ -40,6 +40,15 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
       console.error('Error adding coffee type:', error);
     }
   };
+
+//consistent image size default -placeholder
+const getDefaultImageURL = (coffeeName) => {
+  // Replace spaces with hyphens and convert to lowercase
+  const formattedName = coffeeName.replace(/\s+/g, '-').toLowerCase();
+  // Return a default image URL based on the formatted coffee name
+  return `https://via.placeholder.com/300?text=${formattedName}`;
+};
+
 
   return (
     <form onSubmit={handleSubmit}>
@@ -92,6 +101,11 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
         <br/>
       </label>
       <br/>
+      {image ? (
+        <img src={image} alt="Coffee" className="coffee-image" />
+      ) : (
+        <div className="coffee-placeholder">No Image</div>
+      )}
       <br/>
       <button type="submit">Add Favorite Coffee Drink</button>
     </form>
