@@ -1,6 +1,7 @@
 // CoffeeForm.js
 import React, { useState } from 'react';
 
+// The State of NewForm Inputs
 const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description, image, and ingredients.*/
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
@@ -49,7 +50,7 @@ const getDefaultImageURL = (coffeeName) => {
   return `https://via.placeholder.com/300?text=${formattedName}`;
 };
 
-
+// Return JSX
   return (
     <form onSubmit={handleSubmit}>
       <hr/>

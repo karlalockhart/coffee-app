@@ -35,6 +35,7 @@ const App = () => {
     );
   };
 
+  // Return JSX
   return (
     <Router>
       <NavBar /> {/* Use NavBar component here */}
