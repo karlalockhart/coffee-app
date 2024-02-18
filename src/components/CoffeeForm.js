@@ -51,6 +51,10 @@ const getDefaultImageURL = (coffeeName) => {
 };
 
 // Return JSX
+// Each of the input types has an onChange event listener, 
+// allowing us to update state when a user interacts with a form. 
+// Once that happens, the value or checked attribute is then set based on the updated state value. 
+// Combining these two steps is what enables us to set up controlled forms.
   return (
     <form onSubmit={handleSubmit}>
       <hr/>
