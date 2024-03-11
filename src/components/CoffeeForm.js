@@ -1,15 +1,15 @@
 // CoffeeForm.js
 import React, { useState } from 'react';
 
-// The State of NewForm Inputs
-const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description, image, and ingredients.*/
+// 1
+const CoffeeForm = ({ addCoffee }) => { /* 2 */
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [image, setImage] = useState('');
   const [ingredients, setIngredients] = useState('');
 
   const handleSubmit = async e => {
-    e.preventDefault(); //what is that it prevents? posting - suppressing the default action of a form from posting
+    e.preventDefault(); // 3
 
     try {
       const response = await fetch('http://localhost:3000/coffeeTypes', {
@@ -21,8 +21,8 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
           name,
           description,
           image: image || getDefaultImageURL(name),
-          ingredients: ingredients.split('\n').map(ingredient => ingredient.trim()), // Split and trim ingredients
-          likes: 0, // Initial likes set to 0 for a new coffee drink
+          ingredients: ingredients.split('\n').map(ingredient => ingredient.trim()), // 4
+          likes: 0, // 5
         }),
       });
 
@@ -31,30 +31,30 @@ const CoffeeForm = ({ addCoffee }) => { /* each card will have name, description
       }
 
       const data = await response.json();
-      addCoffee(data); // Update state with the new coffee type
-      // Clear the form
-      setName('');
-      setDescription('');
-      setImage('');
-      setIngredients('');
+      addCoffee(data); // 6
+      // 7
+      setName(''); // 8
+      setDescription(''); // 8
+      setImage(''); // 8
+      setIngredients(''); // 8
     } catch (error) {
       console.error('Error adding coffee type:', error);
     }
   };
 
-//consistent image size default | image placeholder
-const getDefaultImageURL = (coffeeName) => {
-  // Replace spaces with hyphens and convert to lowercase
-  const formattedName = coffeeName.replace(/\s+/g, '-').toLowerCase();
-  // Return a default image URL based on the formatted coffee name
+// 9
+const getDefaultImageURL = (coffeeName) => { // 10
+  const formattedName = coffeeName.replace(/\s+/g, '-').toLowerCase(); // 11
+ 
   return `https://via.placeholder.com/300?text=${formattedName}`;
 };
 
-// Return JSX
-// Each of the input types has an onChange event listener, 
-// allowing us to update state when a user interacts with a form. 
-// Once that happens, the value or checked attribute is then set based on the updated state value. 
-// Combining these two steps is what enables us to set up controlled forms.
+// 12
+// 13
+// 14
+// 15
+// 16
+
   return (
     <form onSubmit={handleSubmit}>
       <hr/>
@@ -65,7 +65,7 @@ const getDefaultImageURL = (coffeeName) => {
           type="text"
           placeholder="Enter coffee name"
           value={name}
-          onChange={e => setName(e.target.value)} //e.target.value will change the "name" to whatever value
+          onChange={e => setName(e.target.value)} // 17
         />
         <br/>
       </label>
@@ -75,7 +75,7 @@ const getDefaultImageURL = (coffeeName) => {
           type="text"
           placeholder="Enter coffee description"
           value={description}
-          onChange={e => setDescription(e.target.value)} //e.target.value will change the "description" to whatever value
+          onChange={e => setDescription(e.target.value)} // 18
         />
         <br/>
       </label>
@@ -84,7 +84,7 @@ const getDefaultImageURL = (coffeeName) => {
         <textarea
           placeholder="Enter coffee ingredients (one per line)"
           value={ingredients}
-          onChange={e => setIngredients(e.target.value)} //e.target.value will change the "ingredients" to whatever value
+          onChange={e => setIngredients(e.target.value)} // 19
         />
         <br/>
         {ingredients && (
@@ -101,7 +101,7 @@ const getDefaultImageURL = (coffeeName) => {
           type="text"
           placeholder="Enter coffee image URL"
           value={image}
-          onChange={e => setImage(e.target.value)} //e.target.value will change the "image" to whatever value
+          onChange={e => setImage(e.target.value)} // 20
         />
         <br/>
       </label>
@@ -118,3 +118,5 @@ const getDefaultImageURL = (coffeeName) => {
 };
 
 export default CoffeeForm;
+
+// END

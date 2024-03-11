@@ -12,22 +12,22 @@ import './App.css';
 
 const App = () => {
   const [coffeeTypes, setCoffeeTypes] = useState([]);
-  const [favorites, setFavorites] = useState([]); // New state for favorites
+  const [favorites, setFavorites] = useState([]); // 1
 
   useEffect(() => {
-    fetch('http://localhost:3000/coffeeTypes') /* fetch is great because it is asynchronous. Returns a promise object w/ 3 status - pending, error, resolved */
-      .then(res => res.json()) /* as long as that PO shows pending as its status, ill skip the second .then line and the .catch line and keep going to do other stuff, but if it's resolved, it will fire the first & second .then line - it multi-tasks*/
+    fetch('http://localhost:3000/coffeeTypes') /* 2 */
+      .then(res => res.json()) /* 3 */
       .then(data => setCoffeeTypes(data))
       //console.log(data)
       .catch(error => console.error('Error fetching coffee types:', error));
-  }, []); //mount this
+  }, []); // 4
 
   const addCoffee = newCoffee => {
     setCoffeeTypes(prevCoffeeTypes => [...prevCoffeeTypes, newCoffee]);
   };
 
   const updateFavorites = (id) => {
-    // Toggle the favorite status in the favorites array
+    // 5
     setFavorites(prevFavorites =>
       prevFavorites.includes(id)
         ? prevFavorites.filter(favoriteId => favoriteId !== id)
@@ -35,15 +35,15 @@ const App = () => {
     );
   };
 
-  // Return JSX
+  // 6
   return (
     <Router>
-      <NavBar /> {/* Use NavBar component here */}
-      <Routes>
-        <Route path="/" element={<Home coffeeTypes={coffeeTypes} addCoffee={addCoffee} updateFavorites={updateFavorites} />} />
-        <Route path="/add-coffee/*" element={<AddCoffee addCoffee={addCoffee} />} />
-        <Route path="/favorites" element={<Favorites favorites={favorites} coffeeTypes={coffeeTypes} />} />
-      </Routes>
+      <NavBar /> {/* 7 */}
+        <Routes>
+          <Route path="/" element={<Home coffeeTypes={coffeeTypes} addCoffee={addCoffee} updateFavorites={updateFavorites} />} />
+          <Route path="/add-coffee/*" element={<AddCoffee addCoffee={addCoffee} />} />
+          <Route path="/favorites" element={<Favorites favorites={favorites} coffeeTypes={coffeeTypes} />} />
+        </Routes>
       <Footer />
     </Router>
   );
@@ -51,15 +51,4 @@ const App = () => {
 
 export default App;
 
-    
-
-/*
-function App() {
-  return (
-    <div className="App">
-      Hey Ya'll!
-    </div>
-  );
-}
-*/
-
+// END

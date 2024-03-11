@@ -6,7 +6,7 @@ const AddCoffee = ({ addCoffee }) => {
   return (
     <div>
       <h3>Have fun and add your favorite coffee drinks!</h3>
-      {/* Add Coffee Types content */}
+      {/* 1 */}
       <CoffeeForm addCoffee={addCoffee} />
       {/*<p>Have fun and add your favorite coffee drinks!</p>*/}
     </div>
@@ -15,3 +15,4 @@ const AddCoffee = ({ addCoffee }) => {
 
 export default AddCoffee;
 
+// END
